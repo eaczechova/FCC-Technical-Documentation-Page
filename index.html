@@ -8,6 +8,107 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <nav id="navbar">
+      <header>ECMAScript 6</header>
+      <ul>
+        <a href="#let" class="nav-link">
+          <li>JavaScript let</li>
+        </a>
+        <a href="#const" class="nav-link">
+          <li>JavaScript const</li>
+        </a>
+        <a href="#default_parameter_values" class="nav-link">
+          <li>JavaScript default parameter values</li>
+        </a>
+        <a href="#find" class="nav-link">
+          <li>Array.find()</li>
+        </a>
+        <a href="#findIndex" class="nav-link">
+          <li>Array.findIndex()</li>
+        </a>
+        <a href="#Reference" class="nav-link">
+          <li>Reference</li>
+        </a>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="let">
+        <header>JavaScript let</header>
+        <p>ES2015 introduced two important new JavaScript keywords: let and const.
+        These two keywords provide Block Scope variables (and constants) in JavaScript.
+        Before ES2015, JavaScript had only two types of scope: Global Scope and Function Scope.</p>
+        <p>The let statement allows you to declare a variable with block scope.</p>
+        <code>
+          var x = 10;
+          // Here x is 10
+          {
+          let x = 2;
+          // Here x is 2
+          }
+          // Here x is 10
+        </code>
+      </section>
+      <section class="main-section" id="const">
+        <header>JavaScript const</header>
+        <p>The const statement allows you to declare a constant (a JavaScript variable with a constant value).
+        Constants are similar to let variables, except that the value cannot be changed.</p>
+        <code>var x = 10;
+        // Here x is 10
+        {
+          const x = 2;
+        // Here x is 2
+        }
+        // Here x is 10
+        </code>
+        <p>Read more about let and const in <a href="https://www.w3schools.com/js/js_let.asp" target="_blank">JS Let / Const</a>.</p>
+      </section>
+      <section class="main-section" id="default_parameter_values">
+        <header>JavaScript default parameter values</header>
+        <p>ES6 allows function parameters to have default values.</p>
+        <code>function myFunction(x, y = 10) {
+        // y is 10 if not passed or undefined
+        return x + y;
+        }
+        myFunction(5); // will return 15
+        </code>
+      </section>
+      <section class="main-section" id="find">
+        <header>Array.find()</header>
+        <p>The find() method returns the value of the first array element that passes a test function.
+          This example finds (returns the value of ) the first element that is larger than 18:</p>
+        <code>var numbers = [4, 9, 16, 25, 29];
+        var first = numbers.find(myFunction);
+        function myFunction(value, index, array) {
+        return value > 18;
+        }
+        </code>
+        <p>Note that the function takes 3 arguments:</p>
+        <ul>
+          <li>The item value</li>
+          <li>The item index</li>
+          <li>The array itself</li>
+        </ul>
+      </section>
+      <section class="main-section" id="findIndex">
+        <header>Array.findIndex()</header>
+        <p>The findIndex() method returns the index of the first array element that passes a test function.
+        This example finds the index of the first element that is larger than 18:</p>
+        <code>var numbers = [4, 9, 16, 25, 29];
+        var first = numbers.findIndex(myFunction);
+        function myFunction(value, index, array) {
+        return value > 18;
+        }</code>
+        <p>Note that the function takes 3 arguments:</p>
+        <ul>
+          <li>The item value</li>
+          <li>The item index</li>
+          <li>The array itself</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/js/js_es6.asp" target="_blank">w3schools.com</a></p>
+    </main>
 
   </body>
 </html>
