@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical Documentation Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -18,7 +19,7 @@
           <li>JavaScript const</li>
         </a>
         <a href="#default_parameter_values" class="nav-link">
-          <li>JavaScript default parameter values</li>
+          <li>JS default parameter</li>
         </a>
         <a href="#find" class="nav-link">
           <li>Array.find()</li>
@@ -33,7 +34,7 @@
     </nav>
     <main id="main-doc">
       <section class="main-section" id="let">
-        <header>JavaScript let</header>
+        <header>JavaScript <em>let</em></header>
         <p>ES2015 introduced two important new JavaScript keywords: let and const.
         These two keywords provide Block Scope variables (and constants) in JavaScript.
         Before ES2015, JavaScript had only two types of scope: Global Scope and Function Scope.</p>
@@ -46,41 +47,48 @@
           // Here x is 2
           }
           // Here x is 10
+
         </code>
       </section>
       <section class="main-section" id="const">
-        <header>JavaScript const</header>
+        <header>JavaScript <em>const</em></header>
         <p>The const statement allows you to declare a constant (a JavaScript variable with a constant value).
         Constants are similar to let variables, except that the value cannot be changed.</p>
-        <code>var x = 10;
-        // Here x is 10
-        {
-          const x = 2;
-        // Here x is 2
-        }
-        // Here x is 10
+        <code>
+          var x = 10;
+          // Here x is 10
+          {
+            const x = 2;
+            // Here x is 2
+          }
+          // Here x is 10
+
         </code>
-        <p>Read more about let and const in <a href="https://www.w3schools.com/js/js_let.asp" target="_blank">JS Let / Const</a>.</p>
+        <p>Read more about let and const in <a href="https://www.w3schools.com/js/js_let.asp" target="_blank" class="ref-link">JS Let / Const</a> .</p>
       </section>
       <section class="main-section" id="default_parameter_values">
-        <header>JavaScript default parameter values</header>
+        <header>JS default parameter values</header>
         <p>ES6 allows function parameters to have default values.</p>
-        <code>function myFunction(x, y = 10) {
-        // y is 10 if not passed or undefined
-        return x + y;
-        }
-        myFunction(5); // will return 15
+        <code>
+          function myFunction(x, y = 10) {
+            // y is 10 if not passed or undefined
+            return x + y;
+          }
+          myFunction(5); // will return 15
+
         </code>
       </section>
       <section class="main-section" id="find">
         <header>Array.find()</header>
         <p>The find() method returns the value of the first array element that passes a test function.
           This example finds (returns the value of ) the first element that is larger than 18:</p>
-        <code>var numbers = [4, 9, 16, 25, 29];
-        var first = numbers.find(myFunction);
-        function myFunction(value, index, array) {
-        return value > 18;
-        }
+        <code>
+          var numbers = [4, 9, 16, 25, 29];
+          var first = numbers.find(myFunction);
+          function myFunction(value, index, array) {
+            return value > 18;
+          }
+
         </code>
         <p>Note that the function takes 3 arguments:</p>
         <ul>
@@ -93,11 +101,14 @@
         <header>Array.findIndex()</header>
         <p>The findIndex() method returns the index of the first array element that passes a test function.
         This example finds the index of the first element that is larger than 18:</p>
-        <code>var numbers = [4, 9, 16, 25, 29];
+      <code>
+        var numbers = [4, 9, 16, 25, 29];
         var first = numbers.findIndex(myFunction);
         function myFunction(value, index, array) {
-        return value > 18;
-        }</code>
+          return value > 18;
+        }
+
+      </code>
         <p>Note that the function takes 3 arguments:</p>
         <ul>
           <li>The item value</li>
@@ -107,7 +118,7 @@
       </section>
       <section class="main-section" id="Reference">
         <header>Reference</header>
-        <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/js/js_es6.asp" target="_blank">w3schools.com</a></p>
+        <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/js/js_es6.asp" target="_blank" class="ref-link">w3schools.com</a> .</p>
     </main>
 
   </body>
